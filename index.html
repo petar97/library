@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>TOP Practise</title>
+</head>
+
+<body>
+    <div id="main">
+        <div id="card-holder"></div>
+
+        <button id="new-book-button">New book</button>
+
+        <div id="add-book-container">
+            <form id="add-book-form">
+                <label for="author">Author:</label>
+                <input type="text" id="author" name="author" autofocus>
+
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title">
+
+                <label for="pages">Number of pages:</label>
+                <input type="text" id="pages" name="pages">
+
+                <label>Have you read the book:</label>
+                <div id="radio-container">
+                    <input type="radio" id="read" name="read-the-book" value="1" checked>
+                    <label for="read">Yes</label>
+                    <input type="radio" id="not-read" name="read-the-book" value="0">
+                    <label for="not-read">No</label>
+                </div>
+
+                <input type="button" id="add-book-button" value="Add">
+            </form>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

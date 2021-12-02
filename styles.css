@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#card-holder {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 100%;
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.title {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    background-color: rgb(185, 185, 185);
+}
+
+.author {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    border-bottom: 1px solid grey;
+}
+
+.book-misc {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.book-misc p {
+    width: 100%;
+    padding: 10px;
+}
+
+.read {
+    cursor: pointer;
+    border-left: 1px solid grey;
+    background-color: rgba(128, 128, 128, 0.15);
+    user-select: none;
+}
+
+.read:hover {
+    cursor: pointer;
+    border-left: 1px solid grey;
+    background-color: rgba(128, 128, 128, 0.3);
+}
+
+.delete-book-button {
+    width: 100%;
+    background-color: rgb(255, 77, 77);
+    border: none;
+    padding: 10px 0;
+}
+
+.delete-book-button:hover {
+    cursor: pointer;
+    background-color: rgb(251, 47, 47);
+}
+
+#new-book-button {
+    align-self: center;
+    padding: 10px 20px;
+}
+
+#new-book-button:hover {
+    cursor: pointer;
+}
+
+#add-book-container {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#add-book-form {
+    margin: auto;
+    padding: 15px;
+    width: 80%;
+    max-width: 500px;
+    background-color: #fefefe;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+input {
+    margin-bottom: 10px;
+}
+
+#radio-container {
+    margin-top: 5px;
+}
+
+#radio-container label {
+    margin-right: 15px;
+}
